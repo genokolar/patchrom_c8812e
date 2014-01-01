@@ -57,17 +57,17 @@
     iput-object v1, p0, Landroid/media/AudioService$AudioServicesEx;->mHwThemeReceiver:Landroid/content/BroadcastReceiver;
 
     #getter for: Landroid/media/AudioService;->mContentResolver:Landroid/content/ContentResolver;
-    invoke-static {p1}, Landroid/media/AudioService;->access$3400(Landroid/media/AudioService;)Landroid/content/ContentResolver;
+    #invoke-static {p1}, Landroid/media/AudioService;->access$3400(Landroid/media/AudioService;)Landroid/content/ContentResolver;
 
-    move-result-object v1
+    #move-result-object v1
 
-    const-string v2, "syskey_sound_hwt"
+    #const-string/jumbo v2, "syskey_sound_hwt"
 
-    invoke-static {v1, v2}, Landroid/provider/SettingsEx$Systemex;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    #invoke-static {v1, v2}, Landroid/provider/SettingsEx$Systemex;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    #move-result-object v1
 
-    iput-object v1, p0, Landroid/media/AudioService$AudioServicesEx;->mSysKeyEffectFile:Ljava/lang/String;
+    #iput-object v1, p0, Landroid/media/AudioService$AudioServicesEx;->mSysKeyEffectFile:Ljava/lang/String;
 
     new-instance v0, Landroid/content/IntentFilter;
 
